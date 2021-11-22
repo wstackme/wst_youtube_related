@@ -9,7 +9,7 @@
 Git을 활용할 경우 좀 더 편리하게 설치하고, 업데이트 할 수 있습니다.
 ```
 cd ./addons/
-git clone https://gitlab.com/wstackme/wst_youtube_related
+git clone https://github.com/wstackme/wst_youtube_related
 
 # 업데이트 시
 git pull origin
