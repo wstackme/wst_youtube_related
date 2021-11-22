@@ -1,0 +1,15 @@
+<load target="../../../../common/xeicon/xeicon.min.css" cond="!defined(RX_BASEDIR)" />
+<load target="../../../../common/css/xeicon/xeicon.min.css" cond="defined(RX_BASEDIR)" />
+
+<load target="style.css" />
+
+<div class="wst wst_youtube_related" style="margin-top: 0; margin-bottom: 50px;"|cond="$addon_info->position == 'top'">
+    <h3><i class="xi xi-youtube"></i> 연관 유튜브</h3>
+    <div class="wst wst_youtube_list">
+        <block loop="$youtube_list => $key, $val" cond="$key < 5">
+            <a href="{$val->url}" title="{$val->title} - {$val->channel}" target="_blank">
+                <img src="{$val->thumbnail}" />
+            </a>
+        </block>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<load target="../../../../common/xeicon/xeicon.min.css" cond="!defined(RX_BASEDIR)" />
+<load target="../../../../common/css/xeicon/xeicon.min.css" cond="defined(RX_BASEDIR)" />
+
+<load target="style.css" />
+
+<div class="wst wst_youtube_related" style="margin-top: 0; margin-bottom: 50px;"|cond="$addon_info->position == 'top'">
+    <h3><i class="xi xi-youtube"></i> 연관 유튜브</h3>
+    <div class="wst wst_youtube_player">
+        <iframe src="{str_replace('/watch?v=', '/embed/', $youtube_list[0]->url)}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="wst wst_youtube_list">
+        <a loop="$youtube_list => $key, $val" href="{$val->url}" target="_blank" title="{$val->title} - {$val->channel}" cond="$key > 0 && $key < 5"><img src="{$val->thumbnail}" /></a>
+    </div>
+</div>

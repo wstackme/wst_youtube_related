@@ -1,0 +1,55 @@
+.wst.wst_youtube_related {
+    display: block;
+    box-sizing: border-box;
+
+    width: 100%;
+    margin: 50px 0 0;
+    padding: 0;
+
+    background: #FFF;
+    border: 1px solid #EEE;
+}
+
+.wst.wst_youtube_related h3 {
+    display: block;
+    box-sizing: border-box;
+
+    width: 100%;
+    margin: 0;
+    padding: 10px 15px;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    background: #FAFAFA;
+    border-bottom: 1px solid #EEE;
+}
+
+.wst.wst_youtube_related h3 i {
+    position: relative;
+    top: 5px;
+    
+    display: inline-block;
+    margin-top: -11px;
+    margin-right: 5px;
+
+    font-size: 24px;
+}
+
+.wst.wst_youtube_related .wst.wst_youtube_list {
+    display: flex;
+    box-sizing: border-box;
+
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 10px 10px;
+}
+
+.wst.wst_youtube_related .wst.wst_youtube_list a {
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.wst.wst_youtube_related .wst.wst_youtube_list a img {
+    width: 100%;
+}

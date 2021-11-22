@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+    <title xml:lang="ko">연관유튜브 출력 애드온</title>
+    <description xml:lang="ko">
+        게시글과 연관된 유튜브의 목록을 출력해 주는 애드온입니다.
+    </description>
+    <version>2.0A</version>
+    <date>2020-11-26</date>
+
+    <author email_address="admin@webstack.me" link="https://webstack.me/">
+        <name xml:lang="ko">웹스택</name>
+    </author>
+
+    <extra_vars>
+        <group>
+            <title xml:lang="ko">1. 출력 설정</title>
+
+            <var name="skin" type="text">
+                <title xml:lang="ko">스킨명</title>
+                <description xml:lang="ko">유튜브 목록을 출력시 사용할 스킨명을 입력해 주세요. 기본값은 'default' 입니다.</description>
+            </var>
+
+            <var name="position" type="select">
+                <title xml:lang="ko">출력 위치</title>
+                <description xml:lang="ko">유튜브 목록을 출력할 위치를 선택해 주세요. 기본값은 '게시글 하단' 입니다.</description>
+
+                <options value="bottom">
+                    <title xml:lang="ko">게시글 하단</title>
+                </options>
+                <options value="top">
+                    <title xml:lang="ko">게시글 상단</title>
+                </options>
+                <options value="custom">
+                    <title xml:lang="ko">사용자 지정</title>
+                </options>
+            </var>
+        </group>
+
+        <group>
+            <title xml:lang="ko">2. 필터링 설정</title>
+
+            <var name="title_filter" type="textarea">
+                <title xml:lang="ko">제목 필터링</title>
+                <description xml:lang="ko">제목에 포함될 경우 영상 목록에서 제외할 단어를 입력해 주세요. 한 줄에 하나씩 작성할 수 있습니다.</description>
+            </var>
+
+            <var name="channel_filter" type="textarea">
+                <title xml:lang="ko">채널명 필터링</title>
+                <description xml:lang="ko">채널명에 포함될 경우 영상 목록에서 제외할 단어를 입력해 주세요. 한 줄에 하나씩 작성할 수 있습니다.</description>
+            </var>
+        </group>
+    </extra_vars>
+</addon>
